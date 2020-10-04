@@ -10,12 +10,14 @@ B:	.word32	8,1,10,2,13,4,6,15
 C:	.word32	0,0,0,0,0,0,0,0
 
 .text
-	daddi r3,r0,32
+	daddi r3,r0,8
+	daddi r4,r0,4
 bucle:	daddi r3,r3,-1
-	lw r1,A(r3)
-	lw r2,B(r3)
-	dadd r4,r1,r2
-	sw r4,C(r3)
+	dmul r5,r4,r3
+	lw r1,A(r5)
+	lw r2,B(r5)
+	dadd r6,r1,r2
+	sw r6,C(r5)
 	bnez r3,bucle
 	halt
 
