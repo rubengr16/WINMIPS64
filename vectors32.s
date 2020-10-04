@@ -1,5 +1,5 @@
-; Programa que calcula la suma de los vectores A y B
-; dejando el resultado en otro vector C
+; Program which adds the values of the vectors A y B
+; leaving the result in C
 
 .data
 
@@ -10,8 +10,8 @@ B:	.word32	8,1,10,2,13,4,6,15
 C:	.word32	0,0,0,0,0,0,0,0
 
 .text
-	daddi r3,r0,8
-	daddi r4,r0,4
+	daddi r3,r0,8 ; vector size
+	daddi r4,r0,4 ; byte per word32 = 4
 bucle:	daddi r3,r3,-1
 	dmul r5,r4,r3
 	lw r1,A(r5)

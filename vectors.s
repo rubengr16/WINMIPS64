@@ -1,5 +1,5 @@
-; Programa que calcula la suma de los vectores A y B
-; dejando el resultado en otro vector C
+; Program which adds the values of the vectors A y B
+; leaving the result in C
 
 .data
 
