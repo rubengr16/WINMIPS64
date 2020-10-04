@@ -1,4 +1,4 @@
-; Programa que coge un Num > 0 y calcula su factorial
+; Programa que coge cualquier Num > 0 y calcula su factorial
 
 .data
 	Num: .byte 4

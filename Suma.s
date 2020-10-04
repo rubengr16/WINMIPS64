@@ -1,4 +1,4 @@
-; Programa que calcula la suma de A y B dejando el resultado en C.
+; Programa que calcula la suma de A y B dejando el resultado en C
 
 .data
 
