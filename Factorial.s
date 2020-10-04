@@ -5,7 +5,7 @@
 	Res: .word 0
 
 .code
-	lb r1, Num(r0) ;
+	lb r1, Num(r0)
 	daddi r2,r0,1
 sigue:	dmul r2,r2,r1
 	daddi r1,r1,-1
